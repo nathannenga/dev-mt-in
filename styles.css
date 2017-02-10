@@ -1,0 +1,81 @@
+* {box-sizing: border-box;}
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  height: 50px;
+  width:100%;
+  padding-right:50px;
+  padding-left:50px;
+
+
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  height: 50px;
+  width:100%;
+
+}
+
+.login-section {
+  Background-color: red;
+  margin-top:100px;
+  margin-left: 50px;
+  height: 500px;
+  width:300px;
+
+}
+
+.welcome-message {
+  height: 50px;
+  width:100%;
+  text-align:center;
+  background-color:blue;
+}
+
+.navigation-container-bottom {
+
+  border-top: solid gray 1px;
+  height:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.navigation-container-top {
+
+  border-bottom: solid gray 1px;
+  height:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-tabs {
+  color: gray;
+
+}
+.input{
+  width:100%;
+  margin-bottom:5px;
+}
+
+.bio-input {
+  height:100px;
+  width:100%;
+  padding-bottom:75px;
+
+}
+
+.changes-button {
+  width:100%;
+  text-align:center;
+}
