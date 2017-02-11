@@ -1,0 +1,10 @@
+<input type="text" ng-model="filterFriend" placeholder="Search For Friends">
+<p ng-repeat = "user in userData | filter:filterFriend">
+Name: {{user.name}}
+<br/>
+Tagline: {{user.tagline}}
+<br/>
+Profile Pic: {{user.profileimage}}
+<br/>
+Bio: {{user.bio}}
+</p>

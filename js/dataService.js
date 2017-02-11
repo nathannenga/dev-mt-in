@@ -1,5 +1,12 @@
 angular.module('app').service('dataService',function(){
-  var userData = []
+  var userData = [
+    {
+      name: "test name",
+      tagline: "test tagline",
+      profileimage: "testimageurl",
+      bio: "test bio"
+    }
+  ]
 
 this.getData = function(){
   return userData;

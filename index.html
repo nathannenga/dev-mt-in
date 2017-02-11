@@ -13,13 +13,13 @@
 	<header class ="header">
 		<div class ="navigation-container-top">
 			<div class ="navigation-tabs">Icon</div>
-			<div class ="navigation-tabs"><a href="#/">DevMountain</a></div>
+			<div class ="navigation-tabs"><a ui-sref="main">DevMountain</a></div>
 			<div class ="navigation-tabs">Menu</div>
 		</div>
 	</header>
 
 
-<ng-view></ngview>
+<ui-view></ui-view>
 	<!-- <div class ="login-section">
 		<div class ="welcome-message">
 			Welcome to DevMountain Social<br/>
@@ -42,8 +42,8 @@
 
 <footer class="footer">
 	<div class ="navigation-container-bottom">
-		<div class ="navigation-tabs"><a href ="#/viewfriends">View Friends</a></div>
-		<div class ="navigation-tabs">Find Friends</div>
+		<div class ="navigation-tabs"><a ui-sref="viewfriends">View Friends</a></div>
+		<div class ="navigation-tabs"><a ui-sref="searchfriends">Find Friends</a></div>
 		<div class ="navigation-tabs">Update Friends</div>
 	</div>
 	</footer>
@@ -58,8 +58,8 @@
 <script type="text/javascript" src = "js/dataService.js"></script>
 <script type="text/javascript" src = "js/mainCtrl.js"></script>
 <script type="text/javascript" src = "js/viewRouter.js"></script>
-<script type="text/ng-template" src="main.html"></script>
-<script type="text/ng-template" src="viewfriends.html"></script>
+<script type="text/javascript" src = "js/friendSearchCtrl.js"></script>
+
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-angular.module('app').controller('mainCtrl', function($scope, dataService){
+angular.module('app').controller('mainCtrl', function($scope, $location, dataService){
 
 $scope.userData = dataService.getData();
 
@@ -18,5 +18,9 @@ $scope.userAdd = function(){
 
     }
 }
+
+$scope.go = function ( path ) {
+  $location.url( path );
+};
 
   })
