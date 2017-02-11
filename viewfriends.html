@@ -1,0 +1,18 @@
+<div class ="login-section">
+	<div class ="welcome-message">
+		Welcome to DevMountain Social<br/>
+		Add Some Info So Friends Can Find You
+	</div>
+	<input type="text" class ="input" ng-model="name" placeholder = "Full Name">
+	<input type="text" class ="input" ng-model="tagline" placeholder = "Tagline">
+	<input type="text" class ="input" ng-model="profileimage" placeholder = "Profile Image Url">
+	<input type="text" class="bio-input" ng-model="bio" placeholder ="Bio">
+	<br/>
+	<button class ="changes-button" ng-click="userAdd()">Save Changes</button>
+</div>
+<p ng-repeat = "user in userData">
+{{user.name}}
+{{user.tagline}}
+{{user.profileimage}}
+{{user.bio}}
+</p>

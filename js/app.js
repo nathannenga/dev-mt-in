@@ -1,4 +1,1 @@
-angular.module('app', [])
-  .controller('mainCtrl', function($scope){
-    
-  })
+angular.module('app', ["ngRoute"]);
