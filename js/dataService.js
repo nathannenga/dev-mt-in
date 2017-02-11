@@ -1,11 +1,41 @@
 angular.module('app').service('dataService',function(){
   var userData = [
     {
-      name: "test name",
-      tagline: "test tagline",
-      profileimage: "testimageurl",
-      bio: "test bio"
-    }
+      name: "Beth Rogers",
+      tagline: "I'm the beth!",
+      profileimage: "https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg",
+      bio: "this is my fake profile! Thanks for chcking it out"
+    },
+    {
+      name: "Ash Ketchum",
+      tagline: "Gotta catch 'em all!'",
+      profileimage: "https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg",
+      bio: "Born in Pallet Town, I hunt for pokemon everyday!"
+    },
+    {
+      name: "He Man",
+      tagline: "I have the power!",
+      profileimage: "https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg",
+      bio: "By the power of Greyskull, I dont know anything about He Man!"
+    },
+    {
+      name: "Bugs Bunny",
+      tagline: "Ehh, What's up, Doc?",
+      profileimage: "https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg",
+      bio: "Just a talking, anthropomorphic rabbit with a habit of cross-dressing."
+    },
+    {
+      name: "Wally West",
+      tagline: "Fastest Man Alive",
+      profileimage: "https://s3.amazonaws.com/uifaces/faces/twitter/jm_denis/128.jpg",
+      bio: "I'm kind of a big deal. but seriously."
+    },
+    {
+      name: "Bruce Wanyne",
+      tagline: "Just a billionaire playboy and for sure not The Batman",
+      profileimage: "https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg",
+      bio: "Hobbies include womanizing, getting drunk, spending money, and not fighting crime."
+    },
   ]
 
 this.getData = function(){

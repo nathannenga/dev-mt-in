@@ -1,10 +1,14 @@
-<input type="text" ng-model="filterFriend" placeholder="Search For Friends">
-<p ng-repeat = "user in userData | filter:filterFriend">
-Name: {{user.name}}
-<br/>
-Tagline: {{user.tagline}}
-<br/>
-Profile Pic: {{user.profileimage}}
-<br/>
-Bio: {{user.bio}}
-</p>
+<div class = "main-images-container">
+  <input type="text" ng-model="filterFriend" placeholder="Search For Friends">
+    <div class ="thumbnail-container">
+        <div ng-repeat = "user in userData | filter:filterFriend">
+        <!-- Name: {{user.name}} -->
+        <!-- <br/>
+        Tagline: {{user.tagline}} -->
+        <!-- <br/> -->
+        <img src="{{user.profileimage}}" id="{{name}}" ng-click='test($event)'>
+        <!-- <br/>
+        Bio: {{user.bio}} -->
+      </div>
+    </div>
+</div>

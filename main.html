@@ -9,7 +9,7 @@
 	<input type="text" class ="input" ng-model="profileimage" placeholder = "Profile Image Url">
 	<input type="text" class="bio-input" ng-model="bio" placeholder ="Bio">
 	<br/>
-	<button class ="changes-button" ng-click="userAdd(); go('/searchfriends')">Save Changes</button>
+	<button class ="changes-button" ng-click="userAdd()">Save Changes</button>
 </div>
 <p ng-repeat = "user in userData">
 {{user.name}}

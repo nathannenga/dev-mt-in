@@ -1,4 +1,4 @@
-angular.module('app').controller('mainCtrl', function($scope, $location, dataService){
+angular.module('app').controller('mainCtrl', function($state, $stateParams, $scope, $location, dataService){
 
 $scope.userData = dataService.getData();
 
@@ -11,6 +11,7 @@ $scope.userAdd = function(){
   }
   if(dataService.addData(newUser))
     {
+      $location.url('/searchfriends');
       $scope.name = '';
       $scope.tagline = '';
       $scope.profileimage = '';
@@ -19,8 +20,9 @@ $scope.userAdd = function(){
     }
 }
 
-$scope.go = function ( path ) {
-  $location.url( path );
-};
+// $scope.go = function ( path ) {
+//   $location.url( path );
+// };
+
 
   })
