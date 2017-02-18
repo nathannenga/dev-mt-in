@@ -1,0 +1,23 @@
+
+<div ng-show="thisUser.name" class ="users-info">
+	<div class = "users-name">
+		<h1>{{thisUser.name}}</h1>
+	</div>
+	<div class = "users-tagline">
+		{{thisUser.tagline}}
+	</div>
+	<div class = "users-bio">
+		{{thisUser.bio}}
+	</div>
+	{{thisUser.profileimage}}
+</div>
+
+
+<div class ="update-section">
+	<input type="text" class ="input" ng-model="name" placeholder = "Full Name">
+	<input type="text" class ="input" ng-model="tagline" placeholder = "Tagline">
+	<input type="text" class ="input" ng-model="profileimage" placeholder = "Profile Image Url">
+	<input type="text" class="bio-input" ng-model="bio" placeholder ="Bio">
+	<br/>
+	<button class ="changes-button" ng-click="updateUser()">Save Changes</button>
+</div>

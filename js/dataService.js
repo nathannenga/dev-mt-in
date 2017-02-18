@@ -1,4 +1,14 @@
 angular.module('app').service('dataService',function(){
+
+  var thisUser = [
+    {
+      name:"",
+      tagline:"",
+      profileimage: "",
+      bio: "",
+    }
+  ]
+
   var userData = [
     {
       name: "Beth Rogers",
@@ -42,12 +52,27 @@ this.getData = function(){
   return userData;
 }
 
+this.getUser = function(){
+  return thisUser;
+}
+
 this.addData = function(data) {
   if(data.name && data.tagline && data.profileimage && data.bio){
-    userData.push(data);
+    thisUser.name = data.name;
+    thisUser.tagline = data.tagline;
+    thisUser.profileimage = data.profileimage;
+    thisUser.bio = data.bio;
     return true;
   }
 }
+
+this.updateUser = function(data) {
+  if(data.name){thisUser.name = data.name};
+  if(data.tagline){thisUser.tagline = data.tagline};
+  if(data.profileimage){thisUser.profileimage = data.profileimage};
+  if(data.bio){thisUser.bio = data.bio};
+  return true;
+  }
 
 
 })

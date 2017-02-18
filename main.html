@@ -1,7 +1,7 @@
 
-<div class ="login-section">
+<div ng-show="!thisUser.name" class ="login-section">
 	<div class ="welcome-message">
-		Welcome to DevMountain Social<br/>
+		Welcome to <span class= "welcome-dev-mountain">DevMountain</span> Social<br/>
 		Add Some Info So Friends Can Find You
 	</div>
 	<input type="text" class ="input" ng-model="name" placeholder = "Full Name">
@@ -11,9 +11,27 @@
 	<br/>
 	<button class ="changes-button" ng-click="userAdd()">Save Changes</button>
 </div>
-<p ng-repeat = "user in userData">
-{{user.name}}
-{{user.tagline}}
-{{user.profileimage}}
-{{user.bio}}
-</p>
+
+<div ng-show="thisUser.name" class ="users-info">
+	<div class = "users-name">
+		<h1>{{thisUser.name}}</h1>
+	</div>
+	<div class = "users-tagline">
+		{{thisUser.tagline}}
+	</div>
+	<div class = "users-bio">
+		{{thisUser.bio}}
+	</div>
+	{{thisUser.profileimage}}
+</div>
+
+
+
+
+<div class ="triangle-containers">
+	<div class ="wrap">
+		<div class="crop">
+			<img src="https://www.w3schools.com/w3images/fjords.jpg">
+		</div>
+	</div>
+</div>

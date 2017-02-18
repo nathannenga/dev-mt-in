@@ -1,1 +1,27 @@
+<div class = "main-images-container">
+  <input type="text" ng-model="filterFriend" placeholder="Search For Friends">
+    <div class ="thumbnail-container">
+        <div ng-repeat = "user in userData | filter:filterFriend" ng>
+        <!-- Name: {{user.name}} -->
+        <!-- <br/>
+        Tagline: {{user.tagline}} -->
+        <!-- <br/> -->
+        <img src="{{user.profileimage}}">
+        <!-- <br/>
+        Bio: {{user.bio}} -->
+      </div>
+    </div>
+</div>
 
+<div ng-show="thisUser.name" class ="users-info">
+	<div class = "users-name">
+		<h1>{{thisUser.name}}</h1>
+	</div>
+	<div class = "users-tagline">
+		{{thisUser.tagline}}
+	</div>
+	<div class = "users-bio">
+		{{thisUser.bio}}
+	</div>
+	{{thisUser.profileimage}}
+</div>

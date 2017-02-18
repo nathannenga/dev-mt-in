@@ -11,6 +11,7 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
         name : 'viewfriends',
         url: '/viewfriends',
         templateUrl: 'viewfriends.html',
+        controller: 'viewFriendsCtrl'
     };
 
     var searchFriends = {
@@ -20,10 +21,18 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
         controller: 'friendSearchCtrl'
     };
 
+    var updateProfile = {
+        name : 'updateProfile',
+        url: '/updateprofile',
+        templateUrl: 'updateProfile.html',
+        controller: 'updateProfileCtrl'
+    };
+
 
     $stateProvider.state(main);
     $stateProvider.state(viewfriends);
     $stateProvider.state(searchFriends);
+    $stateProvider.state(updateProfile);
     $urlRouterProvider.otherwise('/');
 
 });
